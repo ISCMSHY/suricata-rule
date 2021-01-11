@@ -1,0 +1,40 @@
+# naver
+alert tcp any any -> any 443 (msg:"naver.com access"; flow:to_server,established; tls_sni; content:"naver.com";  sid:10001; rev:1;)
+# netflix
+alert tcp any any -> any 443 (msg:"netflix.com access"; flow:to_server,established; tls_sni; content:"netflix.com";  sid:10002; rev:1;)
+#youtube
+alert tcp any any -> any 443 (msg:"youtube.com access"; flow:to_server,established; tls_sni; content:"youtube.com";  sid:10003; rev:1;)
+#google
+alert tcp any any -> any 443 (msg:"google.com access"; flow:to_server,established; tls_sni; content:"google.com";  sid:10004; rev:1;)
+#daum
+alert tcp any any -> any 443 (msg:"daum.net access"; flow:to_server,established; tls_sni; content:"daum.net";  sid:10005; rev:1;)
+#facebook
+alert tcp any any -> any 443 (msg:"facebook.com access"; flow:to_server,established; tls_sni; content:"facebook.com";  sid:10006; rev:1;)
+#auction
+alert tcp any any -> any 80 (msg:"auction.co.kr access"; content:"GET /"; content:"Host: "; content:"auction.co.kr";  sid:10007; rev:1;)
+#tistory
+alert tcp any any -> any 443 (msg:"tistory.com access"; flow:to_server,established; tls_sni; content:"tistory.com";  sid:10008; rev:1;)
+#gilgil.net
+alert tcp any any -> any 80 (msg:"gilgil.net access"; content:"GET /"; content:"Host: "; content:"gilgil.net"; sid:10009; rev:1;)
+#github
+alert tcp any any -> any 443 (msg:"github.com access"; flow:to_server,established; tls_sni; content:"github.com";  sid:100010; rev:1;)
+#kitribob
+alert tcp any any -> any 443 (msg:"kitribob.kr access"; flow:to_server,established; tls_sni; content:"kitribob.kr";  sid:100011; rev:1;)
+#notion
+alert tcp any any -> any 443 (msg:"notion.so access"; flow:to_server,established; tls_sni; content:"notion.so";  sid:100012; rev:1;)
+#kakao
+alert tcp any any -> any 443 (msg:"kakaocorp.com access"; flow:to_server,established; tls_sni; content:"kakaocorp.com";  sid:100013; rev:1;)
+#melon
+alert tcp any any -> any 443 (msg:"melon.com access"; flow:to_server,established; tls_sni; content:"melon.com";  sid:100014; rev:1;)
+#zoom
+alert tcp any any -> any 443 (msg:"zoom.us access"; flow:to_server,established; tls_sni; content:"zoom.us";  sid:100015; rev:1;)
+#coupang
+alert tcp any any -> any 443 (msg:"coupang.com access"; flow:to_server,established; tls_sni; content:"coupang.com";  sid:100016; rev:1;)
+#11st
+alert tcp any any -> any 443 (msg:"11st.co.kr access"; flow:to_server,established; tls_sni; content:"11st.co.kr";  sid:100017; rev:1;)
+#gmarket
+alert tcp any any -> any 443 (msg:"gmarket.co.kr access"; flow:to_server,established; tls_sni; content:"gmarket.co.kr";  sid:100018; rev:1;)
+#eleparts
+alert tcp any any -> any 443 (msg:"eleparts.co.kr access"; flow:to_server,established; tls_sni; content:"eleparts.co.kr";  sid:100019; rev:1;)
+#wemakeprice.com
+alert tcp any any -> any 443 (msg:"wemakeprice.com access"; flow:to_server,established; tls_sni; content:"wemakeprice.com";  sid:100020; rev:1;)
